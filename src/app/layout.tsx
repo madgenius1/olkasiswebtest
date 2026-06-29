@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const manrope = Manrope({
-  weight: ["400"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   style: "normal",
   subsets: ["latin"],
   variable: "--font-manrope",
@@ -41,14 +41,10 @@ export default function RootLayout({
     >
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
+        {/* Removed manual google font preconnect tags since next/font handles this automatically */}
       </head>
-      <body>
+      {/* Added manrope.className here to apply the font globally */}
+      <body className={manrope.className}> 
         <Navbar />
         <main>{children}</main>
         <Footer />
