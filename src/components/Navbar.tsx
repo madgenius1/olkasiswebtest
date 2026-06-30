@@ -9,9 +9,9 @@ import { cn } from "@/lib/utils";
 const navItems = [
   {
     label: "Products",
-    href: "/products/zanari",
+    href: "/products/olkasis-app",
     children: [
-      { label: "Zanari App", href: "/products/zanari" },
+      { label: "Olkasis App", href: "/products/olkasis-app" },
       { label: "ETFs", href: "/products/etfs" },
       { label: "Asset Management", href: "/products/asset-management" },
       { label: "Wealth Advisory", href: "/products/wealth-advisory" },
@@ -82,7 +82,7 @@ export default function Navbar() {
                 Olkasis Capital
               </div>
               <div className="text-xs pt-1 leading-none text-[#c9a84c]">
-                Zanari · ETFs · Wealth
+                Olkasis App · Investment · Wealth
               </div>
             </div>
           </Link>
