@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import Button from "./ui/Button";
 import { cn } from "@/lib/utils";
 
@@ -63,7 +63,7 @@ export default function Navbar() {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled || !isHome
           ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100"
-          : "bg-transparent"
+          : "bg-transparent",
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -76,7 +76,7 @@ export default function Navbar() {
               <div
                 className={cn(
                   "font-bold text-base leading-none transition-colors",
-                  scrolled || !isHome ? "text-[#0a4f3c]" : "text-white"
+                  scrolled || !isHome ? "text-[#0a4f3c]" : "text-white",
                 )}
               >
                 Olkasis Capital
@@ -92,7 +92,9 @@ export default function Navbar() {
               <div
                 key={item.label}
                 className="relative"
-                onMouseEnter={() => item.children && setActiveDropdown(item.label)}
+                onMouseEnter={() =>
+                  item.children && setActiveDropdown(item.label)
+                }
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <Link
@@ -101,11 +103,11 @@ export default function Navbar() {
                     "flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium transition-colors",
                     scrolled || !isHome
                       ? "text-gray-700 hover:text-forest hover:bg-gray-50"
-                      : "text-white/90 hover:text-white hover:bg-white/10"
+                      : "text-white/90 hover:text-white hover:bg-white/10",
                   )}
                 >
                   {item.label}
-                  {item.children && <ChevronDown className="w-3.5 h-3.5" />}
+                  {item.children && <FiChevronDown className="w-3.5 h-3.5" />}
                 </Link>
                 {item.children && activeDropdown === item.label && (
                   <div className="absolute top-full left-0 mt-1 w-52 bg-white rounded-2xl shadow-xl border border-gray-100 py-2 z-50">
@@ -126,7 +128,13 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-3">
             <Link href="/investor-relations">
-              <Button variant="ghost" size="md" className={cn(!(scrolled || !isHome) && "text-white hover:bg-white/10")}>
+              <Button
+                variant="ghost"
+                size="md"
+                className={cn(
+                  !(scrolled || !isHome) && "text-white hover:bg-white/10",
+                )}
+              >
                 Investors
               </Button>
             </Link>
@@ -138,11 +146,11 @@ export default function Navbar() {
           <button
             className={cn(
               "lg:hidden p-2 rounded-lg transition-colors",
-              scrolled || !isHome ? "text-gray-700" : "text-white"
+              scrolled || !isHome ? "text-gray-700" : "text-white",
             )}
             onClick={() => setOpen(!open)}
           >
-            {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {open ? <FiX className="w-6 h-6" /> : <FiMenu className="w-6 h-6" />}
           </button>
         </div>
 
@@ -173,10 +181,14 @@ export default function Navbar() {
             ))}
             <div className="px-4 pt-3 flex flex-col gap-2">
               <Link href="/investor-relations">
-                <Button variant="outline" size="sm" className="w-full">Investors</Button>
+                <Button variant="outline" size="sm" className="w-full">
+                  Investors
+                </Button>
               </Link>
               <Link href="/products/zanari">
-                <Button size="sm" className="w-full">Join Waitlist</Button>
+                <Button size="sm" className="w-full">
+                  Join Waitlist
+                </Button>
               </Link>
             </div>
           </div>
