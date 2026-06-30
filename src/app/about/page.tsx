@@ -8,14 +8,14 @@ export default function AboutPage() {
   return (
     <>
       <section className="bg-[#0a4f3c] pt-32 pb-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl font-bold text-white mb-6">Built for Africa.<br /><span className="text-[#c9a84c]">By Africans.</span></h1>
           <p className="text-white/70 text-xl leading-relaxed">Olkasis Capital was born from a simple observation: African wealth deserved better infrastructure than it had been given.</p>
         </div>
       </section>
 
       <section className="bg-white py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#0a4f3c] mb-6">Our Story</h2>
           <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
             <p>Africa holds 30% of the world&apos;s mineral wealth, 60% of its arable land, and 1.4 billion people — yet African capital markets remain chronically underutilised by everyday Africans. Savings sit in low-yield accounts. The diaspora sends remittances home but has no reliable way to invest.</p>

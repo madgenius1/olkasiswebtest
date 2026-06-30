@@ -35,7 +35,7 @@ export default function ContactPage() {
   return (
     <>
       <section className="bg-[#0a4f3c] pt-32 pb-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl font-bold text-white mb-6">Contact Us</h1>
           <p className="text-white/70 text-xl max-w-2xl">
             Our team is ready to help. Choose the right channel for your
