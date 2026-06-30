@@ -31,10 +31,10 @@ const navItems = [
   {
     label: "Company",
     href: "/about",
-    // children: [
-    //   // { label: "Our Story", href: "/about" },
-    //   // { label: "Careers", href: "/careers" },
-    // ],
+    children: [
+      { label: "Our Story", href: "/about" },
+      { label: "Contact Us", href: "/contact" },
+    ],
   },
   // { label: "Regulatory", href: "/regulatory" },
 ];
@@ -150,7 +150,11 @@ export default function Navbar() {
             )}
             onClick={() => setOpen(!open)}
           >
-            {open ? <FiX className="w-6 h-6" /> : <FiMenu className="w-6 h-6" />}
+            {open ? (
+              <FiX className="w-6 h-6" />
+            ) : (
+              <FiMenu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
