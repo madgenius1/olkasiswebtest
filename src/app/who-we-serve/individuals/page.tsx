@@ -23,7 +23,7 @@ export default function IndividualsPage() {
               <ul className="space-y-3">
                 {[
                   "Minimum deposit: Ksh. 100 — less than a cup of coffee",
-                  "Fund with M-Pesa, no bank account required",
+                  "Fund with Mobile Money, Bank, or other Digital Means, no bank account required",
                   "AI advisor Rafiki guides every decision",
                   "Built-in financial education hub",
                   "CMA Kenya regulated — your money is protected",
@@ -40,10 +40,10 @@ export default function IndividualsPage() {
               <h3 className="font-bold text-[#063328] text-xl mb-4">Your investment journey</h3>
               <div className="space-y-4">
                 {[
-                  { step: "S", title: "Open your Olkasis App account", desc: "10-minute remote KYC, no branch visit needed" },
-                  { step: "F", title: "Deposit funds in your Chequing Account", desc: "From Ksh. 100. Instant, zero fees" },
-                  { step: "I", title: "Build your portfolio", desc: "NSE stocks, ETFs, and bonds — guided by Rafiki" },
-                  { step: "G", title: "Watch your wealth build", desc: "Compound returns, reinvested automatically" },
+                  { step: "S", title: "Start by creating your Olkasis App account", desc: "10-minute remote KYC, no branch visit needed" },
+                  { step: "F", title: "Deposit Funds in your Chequing Account", desc: "From Ksh. 100. Instant, zero fees" },
+                  { step: "I", title: "Invest and Build your portfolio", desc: "NSE stocks, ETFs, and bonds — guided by Rafiki" },
+                  { step: "G", title: "Watch your wealth Grow", desc: "Compound returns, reinvested automatically" },
                 ].map(({ step, title, desc }) => (
                   <div key={step} className="flex gap-4">
                     <div className="w-8 h-8 bg-[#0a4f3c] rounded-full text-white text-xs font-bold flex items-center justify-center flex-shrink-0">{step}</div>
@@ -61,7 +61,7 @@ export default function IndividualsPage() {
 
       <section className="bg-[#063328] py-16 text-center">
         <div className="max-w-xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-white mb-4">Ready to start?</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">Ready to start?</h2>
           <Link href="/products/olkasis-app">
             <Button variant="secondary" size="lg" className="gap-2">Join Olkasis App Waitlist <ArrowRight className="w-5 h-5" /></Button>
           </Link>

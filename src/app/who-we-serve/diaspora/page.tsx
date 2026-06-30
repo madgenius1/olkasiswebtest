@@ -25,7 +25,7 @@ export default function DiasporaPage() {
             {[
               { title: "Remote KYC", desc: "Verify your identity from anywhere using just your passport and a selfie. Under 10 minutes." },
               { title: "Multi-currency deposits", desc: "Deposit in USD, GBP, or EUR. We handle the Ksh. conversion at competitive FX rates (market rate + 0.5%)." },
-              { title: "M-Pesa abroad", desc: "Use M-Pesa Global to fund your Zanari account — the same service millions already use for remittances." },
+              { title: "Multiple Funding Options", desc: "Use digital means to fund your Olkasis App account — the same service millions already use for remittances." },
               { title: "Tax guidance", desc: "Our advisors guide you on Kenya/diaspora tax implications. Partners in the UK, US, and Canada." },
               { title: "Repatriation", desc: "Withdraw profits in your local currency at any time. No lock-in. RBA and CBK compliant." },
               { title: "Community", desc: "Join our diaspora investor community. Webinars, market updates, and peer connections." },
@@ -57,7 +57,7 @@ export default function DiasporaPage() {
 
       <section className="bg-[#063328] py-16 text-center">
         <div className="max-w-xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-white mb-4">Start investing from anywhere</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">Start investing from anywhere</h2>
           <Link href="/products/olkasis-app">
             <Button variant="secondary" size="lg" className="gap-2">Join Waitlist <ArrowRight className="w-5 h-5" /></Button>
           </Link>

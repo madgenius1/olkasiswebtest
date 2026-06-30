@@ -99,27 +99,36 @@ export default function AboutPage() {
             Leadership Team
           </h2>
           <p className="text-gray-600 mb-10">
-            The people building Africa&apos;s most ambitious investment
-            platform.
+            The people building Kenya&apos; and Africa&apos;s most ambitious
+            investment platform.
           </p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6">
             {[
               {
-                name: "Founder & CEO",
-                role: "Building Africa's capital infrastructure",
+                name: "Collins Murichu",
+                title: "CEO & Co-Founder",
+                role: "Securities and Finance Leader",
               },
               {
-                name: "Chief Investment Officer",
-                role: "Decades of African markets expertise",
+                name: "Nick Juma",
+                title: "CTO & Co-Founder",
+                role: "Fintech Web and Mobile App Developer",
               },
               {
-                name: "Head of Technology",
-                role: "Scaling financial platforms across Africa",
+                name: "Kevin Mwangi",
+                title: "CPO",
+                role: "Scaling financial platforms across Kenya",
+              },
+              {
+                name: "Bob Mwangi",
+                title: "CIO",
+                role: "Backend Developer and Fintech Savant",
               },
             ].map((member, i) => (
               <div key={i} className="bg-[#f8f5ef] rounded-2xl p-6">
                 <div className="w-16 h-16 bg-[#0a4f3c]/10 rounded-full mb-4" />
                 <div className="font-bold text-[#063328]">{member.name}</div>
+                <div className="font-bold text-[#063328]">{member.title}</div>
                 <div className="text-gray-500 text-sm mt-1">{member.role}</div>
               </div>
             ))}

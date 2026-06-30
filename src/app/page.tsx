@@ -491,26 +491,48 @@ export default function HomePage() {
       </section>
 
       {/* Mission */}
-      <section className="bg-[#0a4f3c] py-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Globe className="w-12 h-12 text-[#c9a84c] mx-auto mb-6" />
-          <h2 className="text-4xl font-bold text-white mb-6">
-            Africa holds 30% of the world&apos;s mineral wealth.
-            <br />
-            <span className="text-[#c9a84c]">Africans should own it.</span>
-          </h2>
-          <p className="text-white/70 text-lg leading-relaxed mb-10">
-            We&apos;re building a Kenyan-first investment platform that makes
-            buying and owning real assets simple, transparent, and accessible
-            for everyone..
-          </p>
-          <Link href="/about">
-            <Button variant="secondary" size="lg" className="gap-2">
-              Our Story <ArrowRight className="w-5 h-5" />
-            </Button>
-          </Link>
-        </div>
-      </section>
+        <section className="bg-[#0a4f3c] py-24">
+            <div className="max-w-7xl mx-auto">
+              <div className="flex justify-center p-4 mb-8">
+                <h3 className="text-white/90 font-semibold lg:text-5xl text-3xl">Learning Hub & Rafiki AI</h3>
+              </div>
+                {/* Section 6: Kenyan Context Advantage */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24 items-center">
+                    <div className="order-2 lg:order-1">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div className="p-6 bg-[#f8f5ef] border border-gray-200 rounded-2xl shadow-sm">
+                                <h4 className="font-bold text-gray-900 mb-2">NSE Context</h4>
+                                <p className="text-sm text-gray-600">Specific explanations for NSE listed companies like Safaricom PLC, Equity Group, and KCB Group.</p>
+                            </div>
+                            <div className="p-6 bg-[#f8f5ef] border border-gray-200 rounded-2xl shadow-sm">
+                                <h4 className="font-bold text-gray-900 mb-2">Mobile-First</h4>
+                                <p className="text-sm text-gray-600">Insights that account for investing, funding patterns and local behavior.</p>
+                            </div>
+                            <div className="p-6 bg-[#f8f5ef] border border-gray-200 rounded-2xl shadow-sm">
+                                <h4 className="font-bold text-gray-900 mb-2">Local Realities</h4>
+                                <p className="text-sm text-gray-600">Understanding inflation and interest rates within the Kenyan economy.</p>
+                            </div>
+                            <div className="p-6 bg-[#f8f5ef] border border-gray-200  rounded-2xl shadow-sm">
+                                <h4 className="font-bold text-gray-900 mb-2">Simplified Jargon</h4>
+                                <p className="text-sm text-gray-600">Financial education that feels familiar, not intimidating.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="order-1 lg:order-2 space-y-6">
+                        <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">Built with Kenyan and Diaspora investors in mind</h3>
+                        <div className="space-y-4">
+                            <p className="text-lg text-white/80 leading-relaxed">
+                                Rafiki AI understands the realities of investing in Kenya. It explains concepts using Kenyan market examples, references NSE-listed companies, and accounts for how most Kenyans interact with money.
+                            </p>
+                            <p className="text-white/80 text-lg">
+                                By grounding explanations in local context—including mobile-first behavior and funding patterns—Rafiki helps make investing feel accessible to everyone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
       {/* Partner / Investor CTA */}
       <section className="bg-white py-16 border-y border-gray-100">
@@ -518,7 +540,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6 bg-[#f8f5ef] rounded-2xl px-8 py-8">
             <div>
               <h3 className="text-xl font-bold text-[#063328]">
-                Interested in Olkasis Capital?
+                Interested in Olkasis Capital | Olkasis App?
               </h3>
               <p className="text-gray-600 text-sm mt-1">
                 Join as a partner or explore investment opportunities in our

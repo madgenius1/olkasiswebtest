@@ -49,11 +49,6 @@ export default function Footer() {
           <div className="lg:col-span-2 flex flex-col justify-between max-w-sm">
             <div>
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-9 h-9 bg-[#c9a84c] rounded-xl flex items-center justify-center shadow-lg shadow-black/10">
-                  <span className="text-white font-bold text-base tracking-tight">
-                    O
-                  </span>
-                </div>
                 <span className="font-bold text-xl tracking-tight">
                   Olkasis Capital
                 </span>
