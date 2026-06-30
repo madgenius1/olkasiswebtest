@@ -8,7 +8,7 @@ import {
 
 const footerLinks = {
   Products: [
-    { label: "Olkasis App", href: "/products/zanari" },
+    { label: "Olkasis App", href: "/products/olkasis-app" },
     { label: "ETFs", href: "/products/etfs" },
     { label: "Derivatives", href: "/products/derivatives" },
 
@@ -34,8 +34,8 @@ const footerLinks = {
 };
 
 const legalLinks = [
-  { label: "Terms of Service", href: "/regulatory" },
-  { label: "Privacy Policy", href: "/regulatory" },
+  { label: "Terms of Service", href: "/terms" },
+  { label: "Privacy Policy", href: "/privacypolicy" },
   { label: "Cookie Policy", href: "/regulatory" },
   { label: "CMA Disclosures", href: "/regulatory" },
   { label: "Risk Disclosures", href: "/regulatory" },

@@ -14,9 +14,77 @@ import {
   BookOpen,
   Zap,
 } from "lucide-react";
+import { HiCash } from "react-icons/hi";
+import { HiBolt, HiKey, HiShieldCheck } from "react-icons/hi2";
 import Button from "@/components/ui/Button";
 import FormAlert from "@/components/ui/FormAlert";
 import { submitForm } from "@/lib/utils";
+
+const points = [
+  {
+    title: "Convenience",
+    tagline: "We’re changing the rules.",
+    description:
+      "We’ve removed the barriers so you can start building your portfolio from as low as Ksh. 100, right from the palm of your hand.",
+    accent: "text-blue-600 dark:text-blue-400",
+    // Changed: Solid background for dark mode to prevent bleed-through
+    bg: "bg-[#0a4f3c]",
+  },
+  {
+    title: "Inclusivity",
+    tagline: "Investing isn't just for the few anymore.",
+    description:
+      "With fractional shares and zero account minimums, we’ve democratized the Kenyan financial market. With us, you have a seat at the table.",
+    accent: "text-emerald-600 dark:text-emerald-400",
+    bg: "bg-[#0a4f3c]",
+  },
+  {
+    title: "Transparency",
+    tagline: "Knowledge is your greatest asset.",
+    description:
+      "We offer real-time market data, no hidden fees, direct access to your money giving you clarity and the confidence to make informed decisions in the NSE market.",
+    accent: "text-violet-600 dark:text-violet-400",
+    bg: "bg-[#0a4f3c]",
+  },
+  {
+    title: "Security",
+    tagline: "Your peace of mind is non-negotiable.",
+    description:
+      "We employ bank-grade encryption, security, and multi-factor authentication to ensure your data and assets are protected by the most advanced safety protocols available today.",
+    accent: "text-amber-600 dark:text-amber-400",
+    bg: "bg-[#0a4f3c]",
+  },
+];
+
+const features = [
+  {
+    title: "Faster CDS Accounts Verification",
+    description:
+      "Open digital trading accounts faster through our digital onboarding flow.",
+    icon: HiBolt,
+    accent: "text-blue-600 bg-blue-100 dark:bg-blue-950/60",
+  },
+  {
+    title: "All Inclusive",
+    description:
+      "Deposit and withdraw funds globally, trade stocks, and build wealth.",
+    icon: HiCash,
+    accent: "text-gray-600 bg-gray-50 dark:bg-gray-900/60",
+  },
+  {
+    title: "Direct Asset Ownership",
+    description: "Assets are registered in your name and in your full control.",
+    icon: HiKey,
+    accent: "text-emerald-600 bg-emerald-50 dark:bg-emerald-950/60",
+  },
+  {
+    title: "Bank-Grade Security",
+    description:
+      "End-to-end encryption and full compliance with Kenyan financial regulations and custodial standards.",
+    icon: HiShieldCheck,
+    accent: "text-purple-600 bg-purple-100 dark:bg-purple-950/60",
+  },
+];
 
 export default function HomePage() {
   const [waitlistForm, setWaitlistForm] = useState({
@@ -59,7 +127,7 @@ export default function HomePage() {
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
               Invest in Kenya,
               <br />
-              <span className="text-[#c9a84c]">from Anywhere, </span> 
+              <span className="text-[#c9a84c]">from Anywhere, </span>
               in the world.
             </h1>
             {/* <p className="text-xl text-white/70 leading-relaxed mb-10 max-w-2xl">
@@ -68,22 +136,24 @@ export default function HomePage() {
               your money should work as hard as you do.
             </p> */}
             <p className="text-xl text-white/90 leading-relaxed mb-10 max-w-2xl">
-              Buy and sell NSE shares, derivatives, invest in Secondary Bonds, and access ETFs, 
-              with direct ownership from one secure, easy-to-use <span className="font-bold text-white">Olkasis App</span>.
+              Buy and sell NSE shares, derivatives, invest in Secondary Bonds,
+              and access ETFs, with direct ownership from one secure,
+              easy-to-use{" "}
+              <span className="font-bold text-white">Olkasis App</span>.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/products/zanari">
+              <Link href="/products/olkasis-app">
                 <Button size="lg" variant="secondary" className="gap-2">
-                  Join Zanari Waitlist <ArrowRight className="w-5 h-5" />
+                  Join Olkasis App Waitlist <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>
-              <Link href="/products/zanari">
+              <Link href="/about">
                 <Button
                   size="lg"
                   variant="outline"
                   className="border-white/30 text-white hover:bg-white hover:text-[#0a4f3c]"
                 >
-                  Olkasis Capital Products
+                  About Us
                 </Button>
               </Link>
             </div>
@@ -116,9 +186,7 @@ export default function HomePage() {
         </div>
       </section>
       */}
-
-
-{/* Olkasis App Feature Highlight */}
+      {/* Olkasis App Feature Highlight */}
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -132,9 +200,12 @@ export default function HomePage() {
                 From your phone.
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                <span className="font-bold">Olkasis App </span> is Kenya&apos;s most accessible mobile investment platform. Fund
-                with mobile money, bank, and digitally, buy NSE stocks and ETFs, enjoy lower p2p transfer rates, and get personalized
-                guidance from <span className="font-bold">Rafiki AI</span> — your AI investment assistant.
+                <span className="font-bold">Olkasis App </span> is Kenya&apos;s
+                most accessible mobile investment platform. Fund with mobile
+                money, bank, and digitally, buy NSE stocks and ETFs, enjoy lower
+                p2p transfer rates, and get personalized guidance from{" "}
+                <span className="font-bold">Rafiki AI</span> — your AI
+                investment assistant.
               </p>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 mb-8">
                 {[
@@ -172,9 +243,10 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
-              <Link href="/products/zanari">
+              <Link href="/products/olkasis-app">
                 <Button size="lg" className="gap-2">
-                  Join the Waitlist <ArrowRight className="w-5 h-5 cursor-pointer" />
+                  Join the Waitlist{" "}
+                  <ArrowRight className="w-5 h-5 cursor-pointer" />
                 </Button>
               </Link>
             </div>
@@ -191,9 +263,24 @@ export default function HomePage() {
               </div>
               <div className="space-y-3">
                 {[
-                  { name: "Safaricom", shares: "3000", change: "+2.1%", value: "KES 42,000" },
-                  { name: "KCB Group", shares: "690", change: "+0.8%", value: "KES 28,500" },
-                  { name: "Equity Group", shares: "420", change: "+5.3%", value: "KES 67,200" },
+                  {
+                    name: "Safaricom",
+                    shares: "3000",
+                    change: "+2.1%",
+                    value: "KES 42,000",
+                  },
+                  {
+                    name: "KCB Group",
+                    shares: "690",
+                    change: "+0.8%",
+                    value: "KES 28,500",
+                  },
+                  {
+                    name: "Equity Group",
+                    shares: "420",
+                    change: "+5.3%",
+                    value: "KES 67,200",
+                  },
                 ].map((stock) => (
                   <div
                     key={stock.name}
@@ -214,7 +301,55 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Products Overview */}
+      {/* Selling Points */}
+      <section className="relative bg-[#0a4f3c] transition-colors duration-500">
+        <div className="relative">
+          {points.map((point, index) => (
+            <section
+              key={point.title}
+              className={`
+              sticky top-0 h-screen flex items-center justify-center isolate
+              transition-all duration-700 ease-out
+              ${point.bg}
+            `}
+            >
+              <div className="relative mx-auto max-w-7xl px-6 md:px-10 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+                  {/* Left */}
+                  <div className="space-y-4">
+                    {/* <div className="absolute top-2 left-2 text-sm tracking-widest text-gray-400 dark:text-gray-500">
+                    0{index + 1}
+                  </div> */}
+
+                    <span
+                      className={`block h-2 w-18 rounded-full bg-current ${point.accent}`}
+                    />
+
+                    <h2
+                      className={`text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight ${point.accent}`}
+                    >
+                      {point.title}
+                    </h2>
+
+                    <p className="text-xl md:text-2xl font-semibold text-gray-900 dark:text-gray-100 max-w-xl">
+                      {point.tagline}
+                    </p>
+                  </div>
+
+                  {/* Right */}
+                  <div>
+                    <p className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-700 dark:text-gray-300 max-w-xl">
+                      {point.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          ))}
+        </div>
+      </section>
+
+      {/* Products Overview 
       <section className="bg-[#f8f5ef] py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
@@ -230,11 +365,11 @@ export default function HomePage() {
             {[
               {
                 icon: Smartphone,
-                title: "Zanari App",
+                title: "Olkasis App",
                 desc: "Kenya's first retail investment app with M-Pesa funding, NSE stocks, and your AI advisor Rafiki.",
                 tag: "Flagship Mobile App",
                 color: "bg-[#0a4f3c]",
-                href: "/products/zanari",
+                href: "/products/olkasis-app",
               },
               {
                 icon: BarChart3,
@@ -286,62 +421,54 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-
-      {/* Who We Serve */}
-      <section className="bg-[#f8f5ef] py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <h2 className="text-4xl font-bold text-[#0a4f3c] mb-4">
-              Who we serve
-            </h2>
-            <p className="text-gray-600 text-lg">
-              One platform, built for every type of African investor.
-            </p>
+    */}
+    
+      {/* Built For  */}
+      <section className="py-16 lg:py-24 px-4 bg-gray-50 dark:bg-gray-950">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div className="max-w-4xl space-y-2">
+              <h2 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white gap-2">
+                Built for the Kenyan and Diaspora Retail Investors
+              </h2>
+              <p className="mt-4 text-gray-800 dark:text-gray-400 text-lg md:text-xl">
+                Open, manage, grow and protect your investments across stocks,
+                ETFs, and bonds through the Zanari Mobile App.
+              </p>
+            </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Individuals",
-                desc: "Whether you're saving your first KES 500 or building long-term wealth — Zanari meets you where you are.",
-                cta: "Start investing",
-                href: "/who-we-serve/individuals",
-                color: "bg-[#0a4f3c]",
-              },
-              {
-                title: "Institutions",
-                desc: "SACCOs, pension funds, corporates, and endowments. Institutional mandates with full reporting and compliance.",
-                cta: "Explore mandates",
-                href: "/who-we-serve/institutions",
-                color: "bg-[#c9a84c]",
-              },
-              {
-                title: "Diaspora",
-                desc: "Kenyans and Africans abroad — invest back home without leaving your city. Remote KYC, multi-currency, M-Pesa abroad.",
-                cta: "Invest from abroad",
-                href: "/who-we-serve/diaspora",
-                color: "bg-[#063328]",
-              },
-            ].map((segment) => (
-              <Link key={segment.title} href={segment.href} className="group">
+
+          {/* Features Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
+            {features.map((feature, idx) => (
+              <div
+                key={idx}
+                className="group relative rounded-3xl border border-gray-200/60 dark:border-white/10 bg-gray-100 dark:bg-gray-950 p-8 shadow-sm hover:shadow-xl transition-all duration-500"
+              >
+                {/* Icon */}
                 <div
-                  className={`${segment.color} rounded-2xl p-8 text-white h-full hover:opacity-95 transition-all hover:-translate-y-1 duration-300`}
+                  className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-transform duration-500 group-hover:scale-110 ${feature.accent}`}
                 >
-                  {/* <div className="text-4xl mb-4">{segment.icon}</div> */}
-                  <h3 className="text-2xl font-bold mb-3">{segment.title}</h3>
-                  <p className="text-white/70 leading-relaxed mb-6">
-                    {segment.desc}
-                  </p>
-                  <div className="flex items-center gap-2 text-[#c9a84c] font-semibold group-hover:gap-3 transition-all">
-                    {segment.cta} <ArrowRight className="w-4 h-4" />
-                  </div>
+                  <feature.icon className="w-7 h-7" />
                 </div>
-              </Link>
+
+                {/* Content */}
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                  {feature.description}
+                </p>
+
+                {/* Subtle hover line */}
+                <div className="absolute inset-x-8 bottom-6 h-px bg-linear-to-r from-transparent via-gray-600/40 to-transparent dark:via-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              </div>
             ))}
           </div>
         </div>
       </section>
-
+      
       {/* Stats */}
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -416,8 +543,9 @@ export default function HomePage() {
             <span className="text-[#c9a84c]">Africans should own it.</span>
           </h2>
           <p className="text-white/70 text-lg leading-relaxed mb-10">
-            We&apos;re building a Kenyan-first investment platform that makes buying 
-            and owning real assets simple, transparent, and accessible for everyone..
+            We&apos;re building a Kenyan-first investment platform that makes
+            buying and owning real assets simple, transparent, and accessible
+            for everyone..
           </p>
           <Link href="/about">
             <Button variant="secondary" size="lg" className="gap-2">
@@ -460,7 +588,7 @@ export default function HomePage() {
       <section id="waitlist" className="bg-[#063328] py-24">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
-            Be first on <span className="text-[#c9a84c]">Zanari</span>
+            Be first on <span className="text-[#c9a84c]">Olkasis App</span>
           </h2>
           <p className="text-white/70 text-lg mb-10">
             Join thousands already on the waitlist. Get early access, exclusive
@@ -496,7 +624,7 @@ export default function HomePage() {
               className="w-full px-5 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#c9a84c] transition-colors"
             />
             <select
-            title="icon"
+              title="icon"
               value={waitlistForm.type}
               onChange={(e) =>
                 setWaitlistForm({ ...waitlistForm, type: e.target.value })
@@ -537,7 +665,8 @@ export default function HomePage() {
             </Button>
           </form>
           <p className="text-white/30 text-xs mt-6">
-            No spam. We&apos;ll only contact you about Zanari launch updates.
+            No spam. We&apos;ll only contact you about Olkasis App launch
+            updates.
           </p>
         </div>
       </section>
