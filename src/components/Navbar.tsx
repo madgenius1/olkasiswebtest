@@ -27,16 +27,16 @@ const navItems = [
       { label: "Financial Advisors", href: "/who-we-serve/advisors" },
     ],
   },
-  // { label: "Insights", href: "/insights" },
+  { label: "Regulatory", href: "/regulatory" },
   {
     label: "Company",
     href: "/about",
     children: [
       { label: "Our Story", href: "/about" },
       { label: "Contact Us", href: "/contact" },
+      { label: "Partner With Us", href: "/partners" },
     ],
   },
-  // { label: "Regulatory", href: "/regulatory" },
 ];
 
 export default function Navbar() {
@@ -69,19 +69,19 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <div className="w-8 h-8 bg-forest rounded-lg flex items-center justify-center">
+            {/* <div className="w-8 h-8 bg-forest rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">O</span>
-            </div>
+            </div> */}
             <div>
               <div
                 className={cn(
-                  "font-bold text-base leading-none transition-colors",
+                  "font-bold text-xl leading-none transition-colors",
                   scrolled || !isHome ? "text-[#0a4f3c]" : "text-white",
                 )}
               >
                 Olkasis Capital
               </div>
-              <div className="text-xs leading-none text-[#c9a84c]">
+              <div className="text-xs pt-1 leading-none text-[#c9a84c]">
                 Zanari · ETFs · Wealth
               </div>
             </div>
@@ -127,19 +127,19 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-3">
-            <Link href="/investor-relations">
+            <Link href="/investor-relations" className="cursor-pointer">
               <Button
                 variant="ghost"
                 size="md"
                 className={cn(
-                  !(scrolled || !isHome) && "text-white hover:bg-white/10",
+                  !(scrolled || !isHome) && "text-white hover:bg-white/10 px-6",
                 )}
               >
                 Investors
               </Button>
             </Link>
-            <Link href="/products/zanari">
-              <Button size="md">Join Waitlist</Button>
+            <Link href="/products/zanari" className="cursor-auto">
+              <Button size="md" className="px-6">Join Waitlist</Button>
             </Link>
           </div>
 
@@ -159,7 +159,7 @@ export default function Navbar() {
         </div>
 
         {open && (
-          <div className="lg:hidden bg-white border-t border-gray-100 py-4 space-y-1">
+          <div className="lg:hidden bg-white border-t border-gray-100 py-4 min-h-screen space-y-1">
             {navItems.map((item) => (
               <div key={item.label}>
                 <Link
@@ -183,14 +183,14 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-            <div className="px-4 pt-3 flex flex-col gap-2">
+            <div className="px-4 py-6 flex flex-col gap-2">
               <Link href="/investor-relations">
-                <Button variant="outline" size="sm" className="w-full">
+                <Button variant="outline" size="lg" className="w-full">
                   Investors
                 </Button>
               </Link>
               <Link href="/products/zanari">
-                <Button size="sm" className="w-full">
+                <Button size="lg" className="w-full">
                   Join Waitlist
                 </Button>
               </Link>
