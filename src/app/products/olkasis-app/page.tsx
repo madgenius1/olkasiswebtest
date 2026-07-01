@@ -34,10 +34,10 @@ export default function OlkasisPage() {
             Flagship Product
           </div>
           <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
-            Olkasis App.<br /><span className="text-[#c9a84c]">Invest in Africa.</span><br />From your phone.
+            Olkasis App.<br /><span className="text-[#c9a84c]">Invest in Kenya and Africa.</span><br />From your phone.
           </h1>
           <p className="text-white/70 text-xl leading-relaxed max-w-2xl mb-8">
-            Kenya&apos;s most accessible retail investment platform. M-Pesa funding, NSE stocks, ETFs, and your AI advisor Rafiki — all in one app.
+            Kenya&apos;s most accessible retail investment platform. Mobile Money, Bank, and Digital funding, NSE stocks, ETFs, and Rafiki, your AI advisor — all in one app.
           </p>
           <div className="flex flex-wrap gap-4 items-center">
             <Button variant="secondary" size="lg" className="gap-2" onClick={() => document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" })}>
@@ -57,7 +57,7 @@ export default function OlkasisPage() {
           <h2 className="text-3xl font-bold text-[#0a4f3c] mb-12 text-center">Everything you need to invest in Africa</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { Icon: Zap, title: "M-Pesa Funding", desc: "Deposit and withdraw in seconds using M-Pesa. Minimum KES 100. No bank account required." },
+              { Icon: Zap, title: "Multiple Funding Options", desc: "Seamlessly Deposit and withdraw in seconds. Minimum Ksh. 100. No bank account required." },
               { Icon: BarChart3, title: "NSE Stocks & ETFs", desc: "Full access to NSE-listed equities, government bonds, and curated African ETFs." },
               { Icon: Star, title: "AI Advisor Rafiki", desc: "Your personal AI investment advisor. Personalised portfolio guidance, risk profiling, and 24/7 market insights." },
               { Icon: BookOpen, title: "Learning Hub", desc: "Financial education built into the app. From 'What is a stock?' to advanced portfolio theory." },
@@ -80,7 +80,7 @@ export default function OlkasisPage() {
           <div className="grid sm:grid-cols-3 gap-8">
             {[
               { step: "01", title: "Sign up & verify", desc: "Create an account and complete remote KYC in under 10 minutes. Valid ID and selfie — that's it." },
-              { step: "02", title: "Fund your account", desc: "Deposit via M-Pesa, bank transfer, or from abroad. Start with as little as KES 100." },
+              { step: "02", title: "Fund your account", desc: "Deposit via mobile money, bank transfer, or from abroad. Start with as little as Ksh. 100." },
               { step: "03", title: "Start investing", desc: "Browse NSE stocks, ETFs, and bonds. Get Rafiki's AI guidance and build your portfolio." },
             ].map(({ step, title, desc }) => (
               <div key={step} className="text-center">
@@ -107,11 +107,11 @@ export default function OlkasisPage() {
               <tbody className="divide-y divide-gray-100">
                 {[
                   ["Account opening", "Free"],
-                  ["Monthly fee", "Free (Basic) / KES 299 (Premium)"],
-                  ["Stock trading fee", "0.3% per trade (min KES 50)"],
+                  ["Monthly fee", "Free (Basic) / Ksh. 199 (Premium)"],
+                  ["Stock trading fee", "0.3% per trade (min Ksh. 50)"],
                   ["ETF management fee", "0.15% – 0.35% p.a."],
-                  ["M-Pesa deposit", "Free"],
-                  ["M-Pesa withdrawal", "Standard M-Pesa rates"],
+                  ["Funds deposit", "Free"],
+                  ["Funds withdrawal", "Standard rates"],
                   ["FX (diaspora)", "Market rate + 0.5%"],
                 ].map(([label, value]) => (
                   <tr key={label} className="hover:bg-white/60 transition-colors">

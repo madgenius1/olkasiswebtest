@@ -331,14 +331,14 @@ export default function HomePage() {
                       {point.title}
                     </h2>
 
-                    <p className="text-xl md:text-2xl font-semibold text-gray-900 dark:text-gray-100 max-w-xl">
+                    <p className="text-xl md:text-2xl font-semibold text-white max-w-xl">
                       {point.tagline}
                     </p>
                   </div>
 
                   {/* Right */}
                   <div>
-                    <p className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-700 dark:text-gray-300 max-w-xl">
+                    <p className="text-base sm:text-lg md:text-xl leading-relaxed text-white/80 max-w-xl">
                       {point.description}
                     </p>
                   </div>
@@ -492,9 +492,9 @@ export default function HomePage() {
 
       {/* Mission */}
         <section className="bg-[#0a4f3c] py-24">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex justify-center p-4 mb-8">
-                <h3 className="text-white/90 font-semibold lg:text-5xl text-3xl">Learning Hub & Rafiki AI</h3>
+                <h3 className="text-white font-semibold lg:text-5xl text-3xl">Learning Hub & Rafiki AI</h3>
               </div>
                 {/* Section 6: Kenyan Context Advantage */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24 items-center">
@@ -520,7 +520,7 @@ export default function HomePage() {
                     </div>
 
                     <div className="order-1 lg:order-2 space-y-6">
-                        <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">Built with Kenyan and Diaspora investors in mind</h3>
+                        <h3 className="text-3xl md:text-4xl font-bold text-white/90">Built with Kenyan and Diaspora investors in mind</h3>
                         <div className="space-y-4">
                             <p className="text-lg text-white/80 leading-relaxed">
                                 Rafiki AI understands the realities of investing in Kenya. It explains concepts using Kenyan market examples, references NSE-listed companies, and accounts for how most Kenyans interact with money.
