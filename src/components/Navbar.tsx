@@ -9,9 +9,9 @@ import { cn } from "@/lib/utils";
 const navItems = [
   {
     label: "Products",
-    href: "/products/olkasis-app",
+    href: "/products/zanari-app",
     children: [
-      { label: "Olkasis App", href: "/products/olkasis-app" },
+      { label: "Zanari App", href: "/products/olkasis-app" },
       { label: "ETFs", href: "/products/etfs" },
       { label: "Asset Management", href: "/products/asset-management" },
       { label: "Wealth Advisory", href: "/products/wealth-advisory" },
@@ -82,7 +82,7 @@ export default function Navbar() {
                 Olkasis Capital
               </div>
               <div className="text-xs pt-1 leading-none text-[#c9a84c]">
-                Olkasis App · Investment · Wealth
+                Zanari App · Investment · Wealth
               </div>
             </div>
           </Link>
@@ -110,7 +110,7 @@ export default function Navbar() {
                   {item.children && <FiChevronDown className="w-3.5 h-3.5" />}
                 </Link>
                 {item.children && activeDropdown === item.label && (
-                  <div className="absolute top-full left-0 mt-1 w-52 bg-white rounded-2xl shadow-xl border border-gray-100 py-2 z-50">
+                  <div className="absolute top-full left-0 pt-1 w-52 bg-white rounded-2xl shadow-xl border border-gray-100 py-2 z-50">
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
