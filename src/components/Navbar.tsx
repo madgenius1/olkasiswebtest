@@ -115,7 +115,7 @@ export default function Navbar() {
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block px-4 py-2.5 text-sm text-gray-700 hover:text-[#0a4f3c] hover:bg-[#f8f5ef] transition-colors"
+                        className="block px-4 py-2.5 text-sm text-gray-700 hover:text-[#0a4f3c] transition-colors"
                       >
                         {child.label}
                       </Link>
@@ -138,7 +138,7 @@ export default function Navbar() {
                 Investors
               </Button>
             </Link>
-            <Link href="/products/zanari" className="cursor-auto">
+            <Link href="/products/zanari-app" className="cursor-auto">
               <Button size="md" className="px-6">Join Waitlist</Button>
             </Link>
           </div>

@@ -139,12 +139,12 @@ export default function HomePage() {
               Buy and sell NSE shares, derivatives, invest in Secondary Bonds,
               and access ETFs, with direct ownership from one secure,
               easy-to-use{" "}
-              <span className="font-bold text-white">Olkasis App</span>.
+              <span className="font-bold text-white">Zanari App</span>.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/products/olkasis-app">
                 <Button size="lg" variant="secondary" className="gap-2">
-                  Join Olkasis App Waitlist <ArrowRight className="w-5 h-5" />
+                  Join Zanari App Waitlist <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>
               <Link href="/about">
@@ -161,14 +161,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Trust Bar 
+      {/* Trust Bar */}
       <section className="bg-white border-b border-gray-100 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-gray-500">
             {[
-              { label: "CMA Kenya", sublabel: "Licensed & Regulated" },
-              { label: "NSE", sublabel: "Exchange Member" },
-              { label: "CDSC", sublabel: "CDS Registered" },
+              { label: "CMA Kenya", sublabel: "In Progress" },
+              { label: "NSE", sublabel: "In Progress" },
+              { label: "CDSC", sublabel: "In Progress" },
               { label: "AML/KYC", sublabel: "Compliant" },
               { label: "256-bit SSL", sublabel: "Bank-grade Security" },
             ].map((item) => (
@@ -185,14 +185,14 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      */}
-      {/* Olkasis App Feature Highlight */}
+      
+      {/* Zanari App Feature Highlight */}
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="inline-flex items-center gap-2 bg-[#0a4f3c]/10 text-[#0a4f3c] text-sm font-semibold px-4 py-2 rounded-full mb-6">
-                The Olkasis App — Our Flagship Mobile Platform
+                Zanari App — Our Flagship Mobile Platform
               </div>
               <h2 className="text-4xl font-bold text-[#063328] mb-6">
                 Invest in Kenya.
@@ -200,7 +200,7 @@ export default function HomePage() {
                 From your phone.
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                <span className="font-bold">Olkasis App </span> is Kenya&apos;s
+                <span className="font-bold">Zanari App </span> is Kenya&apos;s
                 most accessible mobile investment platform. Fund with mobile
                 money, bank, and digitally, buy NSE stocks and ETFs, enjoy lower
                 p2p transfer rates, and get personalized guidance from{" "}
@@ -267,19 +267,19 @@ export default function HomePage() {
                     name: "Safaricom",
                     shares: "3000",
                     change: "+2.1%",
-                    value: "KES 42,000",
+                    value: "Ksh. 42,000",
                   },
                   {
                     name: "KCB Group",
                     shares: "690",
                     change: "+0.8%",
-                    value: "KES 28,500",
+                    value: "Ksh. 28,500",
                   },
                   {
                     name: "Equity Group",
                     shares: "420",
                     change: "+5.3%",
-                    value: "KES 67,200",
+                    value: "Ksh. 67,200",
                   },
                 ].map((stock) => (
                   <div
@@ -540,7 +540,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6 bg-[#f8f5ef] rounded-2xl px-8 py-8">
             <div>
               <h3 className="text-xl font-bold text-[#063328]">
-                Interested in Olkasis Capital | Olkasis App?
+                Interested in Olkasis Capital | Zanari App?
               </h3>
               <p className="text-gray-600 text-sm mt-1">
                 Join as a partner or explore investment opportunities in our
@@ -567,7 +567,7 @@ export default function HomePage() {
       <section id="waitlist" className="bg-[#063328] py-24">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
-            Be first on <span className="text-[#c9a84c]">Olkasis App</span>
+            Be first on the <span className="text-[#c9a84c]">Zanari App</span>
           </h2>
           <p className="text-white/70 text-lg mb-10">
             Join thousands already on the waitlist. Get early access, exclusive

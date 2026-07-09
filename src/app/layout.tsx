@@ -18,9 +18,9 @@ const baseUrl = "https://olkasiscapital.com";
 
 export const metadata: Metadata = {
   title:
-    "Olkasis Capital | Olkasis App - Invest in and Trade Kenyan Capital Market",
+    "Olkasis Capital | Zanari App - Invest in and Trade Kenyan Capital Market",
   description:
-    "Olkasis Capital is a Kenya-based investment firm offering the Olkasis retail investment app, ETFs, asset management, and wealth advisory services for Kenya, Africa, and clients in diaspora.",
+    "Olkasis Capital is a Kenya-based investment firm offering the Zanari retail investment app, ETFs, asset management, and wealth advisory services for Kenya, Africa, and clients in diaspora.",
   keywords: [
     "Diaspora investing in Kenya",
     "Nairobi Securities Exchange investing",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${siteName}`,
     description:
-      "Olkasis Capital | Olkasis App - Buy and Sell Kenyan Stocks, Equities, ETFs, Derivatives, and Invest in the Kenyan Capital Markets.",
+      "Olkasis Capital | Zanari App - Buy and Sell Kenyan Stocks, Equities, ETFs, Derivatives, and Invest in the Kenyan Capital Markets.",
     url: baseUrl,
     siteName: siteName,
     images: [
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
         url: `${baseUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Olkasis Capital | Olkasis App - Buy and Sell Kenyan Stocks, Equities, ETFs, Derivatives, and Invest in the Kenyan Capital Markets.",
+        alt: "Olkasis Capital | Zanari App - Buy and Sell Kenyan Stocks, Equities, ETFs, Derivatives, and Invest in the Kenyan Capital Markets.",
       },
     ],
     locale: "en_KE",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteName,
     description:
-      "Olkasis Capital | Olkasis App - Buy and Sell Kenyan Stocks, Equities, ETFs, Derivatives, and Invest in the Kenyan Capital Markets.",
+      "Olkasis Capital | Zanari App - Buy and Sell Kenyan Stocks, Equities, ETFs, Derivatives, and Invest in the Kenyan Capital Markets.",
     images: [`${baseUrl}/og-image.jpg`],
   },
   metadataBase: new URL(baseUrl),

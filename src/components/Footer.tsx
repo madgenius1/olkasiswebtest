@@ -8,7 +8,7 @@ import {
 
 const footerLinks = {
   Products: [
-    { label: "Olkasis App", href: "/products/olkasis-app" },
+    { label: "Zanari App", href: "/products/zanari-app" },
     { label: "ETFs", href: "/products/etfs" },
     { label: "Derivatives", href: "/products/derivatives" },
 
