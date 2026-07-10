@@ -4,6 +4,7 @@ import { MapPin, Phone, Mail, Clock, ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
 import FormAlert from "@/components/ui/FormAlert";
 import { submitForm } from "@/lib/utils";
+import Link from "next/link";
 
 export default function ContactPage() {
   const [form, setForm] = useState({
@@ -58,38 +59,45 @@ export default function ContactPage() {
                     Icon: MapPin,
                     label: "Address",
                     value: "Olkasis Capital Ltd, Nairobi, Kenya",
+                    href: "https://maps.google.com/?q=Olkasis+Capital+Ltd+Nairobi+Kenya",
                   },
                   {
                     Icon: Mail,
                     label: "General enquiries",
                     value: "info@olkasiscapital.com",
+                    href: "mailto:info@olkasiscapital.com",
                   },
                   {
                     Icon: Mail,
                     label: "Investor relations",
                     value: "investors@olkasiscapital.com",
+                    href: "mailto:investors@olkasiscapital.com",
                   },
                   {
                     Icon: Mail,
                     label: "Partnerships",
                     value: "partners@olkasiscapital.com",
+                    href: "mailto:partners@olkasiscapital.com",
                   },
                   {
                     Icon: Mail,
                     label: "Press & media",
                     value: "press@olkasiscapital.com",
+                    href: "mailto:press@olkasiscapital.com",
                   },
                   {
                     Icon: Phone,
                     label: "Phone",
                     value: "+254 (0) 726 498 594",
+                    href: "tel:+254726498594", // Stripped spaces/parentheses for clean dialing
                   },
                   {
                     Icon: Clock,
                     label: "Support hours",
                     value: "Monday – Friday, 8:00am – 6:00pm EAT",
+                    href: null, // Hours shouldn't be a clickable link
                   },
-                ].map(({ Icon, label, value }) => (
+                ].map(({ Icon, label, value, href }) => (
                   <div key={label} className="flex gap-4">
                     <div className="w-10 h-10 bg-[#0a4f3c]/10 rounded-xl flex items-center justify-center flex-shrink-0">
                       <Icon className="w-5 h-5 text-[#0a4f3c]" />
@@ -98,9 +106,22 @@ export default function ContactPage() {
                       <div className="text-xs text-gray-400 font-medium uppercase tracking-wider">
                         {label}
                       </div>
-                      <div className="font-medium text-[#063328] text-sm mt-0.5">
-                        {value}
-                      </div>
+
+                      {href ? (
+                        <Link
+                          href={href}
+                          className="block font-medium text-[#063328] hover:text-[#0a4f3c] transition-colors text-sm mt-0.5"
+                          {...(label === "Address"
+                            ? { target: "_blank", rel: "noopener noreferrer" }
+                            : {})}
+                        >
+                          {value}
+                        </Link>
+                      ) : (
+                        <div className="font-medium text-[#063328] text-sm mt-0.5">
+                          {value}
+                        </div>
+                      )}
                     </div>
                   </div>
                 ))}
