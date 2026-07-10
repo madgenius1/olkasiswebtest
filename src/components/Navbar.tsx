@@ -11,7 +11,7 @@ const navItems = [
     label: "Products",
     href: "/products/zanari-app",
     children: [
-      { label: "Zanari App", href: "/products/olkasis-app" },
+      { label: "Zanari App", href: "/products/zanari-app" },
       { label: "ETFs", href: "/products/etfs" },
       { label: "Asset Management", href: "/products/asset-management" },
       { label: "Wealth Advisory", href: "/products/wealth-advisory" },
