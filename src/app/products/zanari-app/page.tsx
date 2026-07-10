@@ -75,11 +75,11 @@ export default function OlkasisPage() {
           <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
             Zanari App.
             <br />
-            <span className="text-[#c9a84c]">Invest in Kenya and Africa.</span>
+            <span className="text-[#c9a84c]">Invest in Kenyan Securities.</span>
             <br />
             From your phone.
           </h1>
-          <p className="text-white/70 text-xl leading-relaxed max-w-2xl mb-8">
+          <p className="text-white/80 text-xl leading-relaxed max-w-2xl mb-8">
             Kenya&apos;s most accessible retail investment platform. Mobile
             Money, Bank, and Digital funding, NSE stocks, ETFs, and Rafiki, your
             AI advisor — all in one app.
@@ -109,7 +109,7 @@ export default function OlkasisPage() {
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#0a4f3c] mb-12 text-center">
-            Everything you need to invest in Africa
+            Everything you need to invest in Kenya
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[

@@ -50,7 +50,7 @@ export default function AssetManagementPage() {
           <h2 className="text-3xl font-bold text-[#0a4f3c] mb-4">Minimum AUM &amp; reporting</h2>
           <div className="space-y-3 text-gray-600">
             {[
-              ["Minimum AUM", "KES 10,000,000 (≈ USD 77,000)"],
+              ["Minimum AUM", "Ksh. 10,000,000 (≈ USD 77,000)"],
               ["Reporting", "Monthly statements, quarterly reviews, annual audited performance reports"],
               ["Compliance", "CMA Kenya licensed, RBA (Retirement Benefits Authority) compliant"],
               ["Custodian", "Independent third-party custodian for full asset segregation"],
@@ -76,7 +76,7 @@ export default function AssetManagementPage() {
               { id: "name", label: "Full name", type: "text", required: true },
               { id: "company", label: "Organisation", type: "text", required: true },
               { id: "email", label: "Email address", type: "email", required: true },
-              { id: "aum", label: "AUM size (KES)", type: "text", required: false },
+              { id: "aum", label: "AUM size (Ksh.)", type: "text", required: false },
             ].map((f) => (
               <div key={f.id}>
                 <label className="block text-sm font-medium text-gray-700 mb-1">{f.label}</label>

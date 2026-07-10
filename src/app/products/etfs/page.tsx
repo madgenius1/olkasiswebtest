@@ -9,8 +9,8 @@ export default function ETFsPage() {
     <>
       <section className="bg-[#0a4f3c] pt-32 pb-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl font-bold text-white mb-6">ETFs.<br /><span className="text-[#c9a84c]">Diversify across Africa.</span></h1>
-          <p className="text-white/70 text-xl max-w-2xl">Low-cost, diversified exposure to African and global markets — available via Zanari or direct investment.</p>
+          <h1 className="text-5xl font-bold text-white mb-6">ETFs.<br /><span className="text-[#c9a84c]">Diversify your investments.</span></h1>
+          <p className="text-white/70 text-xl max-w-2xl">Low-cost, diversified exposure to Kenyan and global markets — available via Zanari or direct investment.</p>
         </div>
       </section>
 
@@ -51,7 +51,7 @@ export default function ETFsPage() {
               <tbody className="divide-y divide-gray-100">
                 {[
                   ["Annual fee", "0.15% – 0.35%", "1.5% – 3.0%"],
-                  ["Minimum investment", "KES 100", "KES 1,000 – 50,000"],
+                  ["Minimum investment", "Ksh. 100", "Ksh. 1,000 – 50,000"],
                   ["Trading", "Real-time (NSE hours)", "Once per day"],
                   ["Transparency", "Holdings published daily", "Monthly reporting"],
                   ["Liquidity", "High (sell any time)", "T+3 redemption"],
@@ -65,13 +65,13 @@ export default function ETFsPage() {
               </tbody>
             </table>
           </div>
-        </div>
+        </div> 
       </section>
 
       <section className="bg-[#063328] py-20 text-center">
         <div className="max-w-xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-white mb-4">Start investing in ETFs</h2>
-          <p className="text-white/60 mb-8">Access our ETF range through the Zanari app or contact us for institutional access.</p>
+          <p className="text-white/60 mb-8">Access our ETF range through the Zanari App or contact us for institutional access.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/products/zanari"><Button variant="secondary" size="lg" className="gap-2">Join Zanari Waitlist <ArrowRight className="w-5 h-5" /></Button></Link>
             <Link href="/contact"><Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white hover:text-[#0a4f3c]">Contact Us</Button></Link>

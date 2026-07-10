@@ -14,10 +14,10 @@ const footerLinks = {
 
     // { label: "Asset Management", href: "/products/asset-management" },
     // { label: "Wealth Advisory", href: "/products/wealth-advisory" },
-  ],
+  ], 
   "Who We Serve": [
     { label: "Individuals", href: "/who-we-serve/individuals" },
-    { label: "Institutions", href: "/who-we-serve/institutions" },
+    // { label: "Institutions", href: "/who-we-serve/institutions" },
     { label: "Diaspora", href: "/who-we-serve/diaspora" },
     // { label: "Advisors / IFAs", href: "/who-we-serve/advisors" },
   ],
@@ -53,8 +53,9 @@ export default function Footer() {
                   Olkasis Capital
                 </span>
               </div>
-              <p className="text-white/60 text-sm leading-relaxed mb-6">
-                Africa's wealth, invested wisely — from Nairobi to the world.
+              <p className="text-white/70 text-sm leading-relaxed mb-6">
+                Democratizing wealth creation for Kenyans by enabling seamless
+                buying and selling of NSE and global market securities.
               </p>
             </div>
 

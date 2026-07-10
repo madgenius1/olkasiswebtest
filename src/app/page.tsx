@@ -502,7 +502,7 @@ export default function HomePage() {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div className="p-6 bg-[#f8f5ef] border border-gray-200 rounded-2xl shadow-sm">
                                 <h4 className="font-bold text-gray-900 mb-2">NSE Context</h4>
-                                <p className="text-sm text-gray-600">Specific explanations for NSE listed companies like Safaricom PLC, Equity Group, and KCB Group.</p>
+                                <p className="text-sm text-gray-600">Get the fundamentals and specific explanations for NSE listed companies.</p>
                             </div>
                             <div className="p-6 bg-[#f8f5ef] border border-gray-200 rounded-2xl shadow-sm">
                                 <h4 className="font-bold text-gray-900 mb-2">Mobile-First</h4>
@@ -540,7 +540,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6 bg-[#f8f5ef] rounded-2xl px-8 py-8">
             <div>
               <h3 className="text-xl font-bold text-[#063328]">
-                Interested in Olkasis Capital | Zanari App?
+                Interested in Olkasis Capital?
               </h3>
               <p className="text-gray-600 text-sm mt-1">
                 Join as a partner or explore investment opportunities in our
@@ -555,7 +555,7 @@ export default function HomePage() {
               </Link>
               <Link href="/investor-relations">
                 <Button className="gap-2">
-                  Invest in Olkasis <ChevronRight className="w-4 h-4" />
+                  Invest in Us <ChevronRight className="w-4 h-4" />
                 </Button>
               </Link>
             </div>
@@ -644,7 +644,7 @@ export default function HomePage() {
             </Button>
           </form>
           <p className="text-white/30 text-xs mt-6">
-            No spam. We&apos;ll only contact you about Olkasis App launch
+            No spam. We&apos;ll only contact you about Zanari App launch
             updates.
           </p>
         </div>

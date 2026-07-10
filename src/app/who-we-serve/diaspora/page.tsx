@@ -20,7 +20,7 @@ export default function DiasporaPage() {
       <section className="bg-white py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#0a4f3c] mb-4">We solved the hard parts</h2>
-          <p className="text-gray-600 text-lg mb-10">Investing in Kenya from abroad used to mean branch visits, wire fees, and paperwork. Not anymore.</p>
+          <p className="text-gray-600 text-lg mb-10">Investing in Kenya from abroad used to mean branch visits, wire fees, and paperwork. <span className="font-bold text-gray-900">Not anymore.</span></p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { title: "Remote KYC", desc: "Verify your identity from anywhere using just your passport and a selfie. Under 10 minutes." },
@@ -38,7 +38,7 @@ export default function DiasporaPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section>  
 
       <section className="bg-[#f8f5ef] py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
