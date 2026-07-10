@@ -4,6 +4,33 @@ import Button from "@/components/ui/Button";
 
 export const metadata = { title: "Our Story — Olkasis Capital" };
 
+const team = [
+    {
+      name: "Collins Murichu",
+      title: "CEO & Co-Founder",
+      role: "Securities and Finance Leader",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=256&h=256&q=80", // Replace with real asset path
+    },
+    {
+      name: "Nick Juma",
+      title: "CTO & Co-Founder",
+      role: "Fintech Web and Mobile App Developer",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=256&h=256&q=80",
+    },
+    {
+      name: "Kevin Mwangi",
+      title: "CPO",
+      role: "Scaling financial platforms across Kenya",
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=256&h=256&q=80",
+    },
+    {
+      name: "Bob Mwangi",
+      title: "CIO",
+      role: "Backend Developer and Fintech Savant",
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=256&h=256&q=80",
+    },
+  ]
+
 export default function AboutPage() {
   return (
     <>
@@ -15,7 +42,7 @@ export default function AboutPage() {
             <span className="text-[#c9a84c]">By Africans.</span>
           </h1>
           <p className="text-white/70 text-xl leading-relaxed">
-            Olkasis Capital and Olkasis App were born from a simple observation:
+            Olkasis Capital and Zanari App were born from a simple observation:
             <span className="font-semibold text-white">
               Investing in Kenya shouldn't feel like an impossible task.
             </span>
@@ -27,6 +54,9 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#0a4f3c] mb-6">Our Story</h2>
           <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
+            <p>
+              Olkasis is a Maasai word meaning Wealth. 
+            </p>
             <p>
               We started Olkasis Capital because investing in Kenya and largely,
               Africa is still complex, intimidating, and inaccessible to many.
@@ -42,7 +72,7 @@ export default function AboutPage() {
             </p>
             <p>
               Our flagship product,{" "}
-              <span className="font-bold">Olkasis App</span>, is Kenya&apos;s
+              <span className="font-bold">Zanari App</span>, is Kenya&apos;s
               first genuinely accessible retail investment platform. Fund with
               mobile money, bank, or digital systems. Buy NSE stocks and ETFs.
               Get guidance from Rafiki, your AI investment advisor. No minimum
@@ -93,7 +123,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-white py-20">
+       {/* <section className="bg-white py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#0a4f3c] mb-4">
             Leadership Team
@@ -134,7 +164,62 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+<section className="bg-white py-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header Section */}
+        <div className="max-w-3xl mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0a4f3c] mb-4 tracking-tight">
+            Leadership Team
+          </h2>
+          <p className="text-gray-600 text-lg">
+            The people building Kenya&apos;s and Africa&apos;s most ambitious
+            investment platform.
+          </p>
+        </div>
+
+        {/* Team Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6">
+          {team.map((member, i) => (
+            <div 
+              key={i} 
+              className="bg-[#f8f5ef] rounded-2xl p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-1 flex flex-col justify-between"
+            >
+              <div>
+                {/* Team Member Image */}
+                <div className="w-20 h-20 mb-5 relative group">
+                  {member.image ? (
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover rounded-full border-2 border-[#0a4f3c]/20 shadow-sm"
+                    />
+                  ) : (
+                    // Fallback Initials if no image string exists
+                    <div className="w-full h-full bg-[#0a4f3c]/10 rounded-full flex items-center justify-center text-[#0a4f3c] font-bold text-xl border border-[#0a4f3c]/20">
+                      {member.name.split(' ').map(n => n[0]).join('')}
+                    </div>
+                  )}
+                </div>
+                
+                <h3 className="font-bold text-lg text-[#063328] leading-snug">
+                  {member.name}
+                </h3>
+                
+                <p className="text-sm font-medium text-[#0a4f3c] mt-0.5">
+                  {member.title}
+                </p>
+              </div>
+
+              <p className="text-gray-500 text-sm mt-4 border-t border-gray-200/60 pt-3">
+                {member.role}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
 
       <section className="bg-[#0a4f3c] py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
