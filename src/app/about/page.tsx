@@ -37,9 +37,9 @@ export default function AboutPage() {
       <section className="bg-[#0a4f3c] pt-32 pb-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl font-bold text-white mb-6">
-            Built for Africa.
+            Built for Kenya.
             <br />
-            <span className="text-[#c9a84c]">By Africans.</span>
+            <span className="text-[#c9a84c]">For Kenya and Beyond.</span>
           </h1>
           <p className="text-white/70 text-xl leading-relaxed">
             Olkasis Capital and Zanari App were born from a simple observation:

@@ -18,7 +18,7 @@ const baseUrl = "https://olkasiscapital.com";
 
 export const metadata: Metadata = {
   title:
-    "Olkasis Capital | Zanari App - Invest in and Trade Kenyan Capital Market",
+    "Olkasis Capital | Zanari App - Invest in and Trade the Kenyan Capital Markets.",
   description:
     "Olkasis Capital is a Kenya-based investment firm offering the Zanari retail investment app, ETFs, asset management, and wealth advisory services for Kenya, Africa, and clients in diaspora.",
   keywords: [
@@ -32,6 +32,8 @@ export const metadata: Metadata = {
     "Asset management in Kenya",
     "Zanari app",
     "Zanari investment app",
+    "Gen-Z best investment app",
+    "Kenya investment app",
     "Wealth management Kenya",
     "Diaspora investing",
     "Invest in Kenyan Stocks",
