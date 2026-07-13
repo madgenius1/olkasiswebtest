@@ -142,7 +142,7 @@ export default function HomePage() {
               <span className="font-bold text-white">Zanari App</span>.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/products/olkasis-app">
+              <Link href="/products/zanari-app">
                 <Button size="lg" variant="secondary" className="gap-2">
                   Join Zanari App Waitlist <ArrowRight className="w-5 h-5" />
                 </Button>
@@ -243,7 +243,7 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
-              <Link href="/products/olkasis-app">
+              <Link href="/products/zanari-app">
                 <Button size="lg" className="gap-2">
                   Join the Waitlist{" "}
                   <ArrowRight className="w-5 h-5 cursor-pointer" />
@@ -369,7 +369,7 @@ export default function HomePage() {
                 desc: "Kenya's first retail investment app with M-Pesa funding, NSE stocks, and your AI advisor Rafiki.",
                 tag: "Flagship Mobile App",
                 color: "bg-[#0a4f3c]",
-                href: "/products/olkasis-app",
+                href: "/products/zanari-app",
               },
               {
                 icon: BarChart3,
